@@ -26,7 +26,7 @@ ChromeDriver driver = new ChromeDriver(capabilities);
 		
 		//Username (pass value)
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("selenium@heytester.org");
+		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("removeduser");
 	     Thread.sleep(2000);	
 		//Next (button click)
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/content/span")).click();
@@ -34,7 +34,7 @@ ChromeDriver driver = new ChromeDriver(capabilities);
 		//Password (pass value)
 		WebDriverWait waitPass = new WebDriverWait(driver,5);
 		WebElement password = waitPass.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@name=\"password\"]")));
-		password.sendKeys("Selen2018!");
+		password.sendKeys("removedpass");
 		//Password next (button click)
 		driver.findElement(By.id("passwordNext")).click();
 		
